@@ -1,0 +1,6 @@
+primary color : #0d1017 (Blue) //
+secondary color : #4970e5 ( lighter blue) // 
+third color : #f5a486 (orangish skin)
+fourth color : #161e2b (darker blue) //
+fifth color : #854bff (purple)
+sixth color : #62c4ab (greenish blue)
