@@ -9,10 +9,10 @@ export default function RootLayout({
 }>) {
   return (
     <>
-    <html lang="ar">
+    <html lang="ar" >
       <body className="bg-black-1 text-white">
         <Navbar/>
-        <section className="">{children}</section>
+        <div className="w-full">{children}</div>
        
         </body>
 
