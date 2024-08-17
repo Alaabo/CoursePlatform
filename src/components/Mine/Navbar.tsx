@@ -11,7 +11,7 @@ import Image from 'next/image'
 const Navbar = () => {
   return (
     <>
-    <div className="fixed top-0  w-full p-4 lg:p-8 ">
+    <div className="fixed top-0  w-full max-w-full p-4 lg:p-8 ">
           <div className='flex justify-between w-full'>
           <Link href={"/"} className='hidden lg:block md:block'>
             <Image

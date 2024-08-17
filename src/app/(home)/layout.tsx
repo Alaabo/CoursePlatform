@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <>
-        <div className="w-screen">{children}</div>
+        <div className="w-full">{children}</div>
     
     </>
     

@@ -10,7 +10,7 @@ export default function RootLayout({
   return (
     <>
     <html lang="ar" >
-      <body className="bg-black-1 text-white">
+      <body className="bg-black-1 max-w-full text-white">
         <Navbar/>
         <div className="w-full">{children}</div>
        

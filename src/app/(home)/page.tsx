@@ -17,13 +17,15 @@ import "../globals.css";
 function Home() {
   return(
     <>
-      <div dir='rtl' className="flex-col md:flex p-6 md:p-0 lg:p-16">
+      <div dir='rtl' className=" overflow-hidden flex-col md:flex p-6 md:p-0 lg:p-16">
         <div className='md:my-12 md:pt-10 md:flex w-full md:justify-center md:flex-row-reverse'>
+        <div>
         <Image
         src={Mysvg}
         alt='Hero SVG'
-        className='h-2/3 w-full'
+        className='h-full w-full'
         />
+        </div>
         <div>
         <h1 className="md:pr-4 md:text-8xl lg:text-9xl text-6xl font-extrabold my-4">تعلم اساسيات البرمجة و <span className='text-orange-500'>احترف</span> الجافا</h1>
         <Separator/>

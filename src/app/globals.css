@@ -13,7 +13,9 @@
   };
 
 };
-
+body {
+  overflow-x: hidden;
+};
 @font-face {
   font-family: 'Fustat';
   src: url('/fonts/Fustat-ExtraLight.ttf') format('truetype');
