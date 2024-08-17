@@ -33,7 +33,7 @@ const Navbar = () => {
           <div className="md:hidden">
           <DropdownMenu >
             <DropdownMenuTrigger asChild>
-              <ChevronDown className='w-[32px] h-[32px] font-bold border rounded-sm'></ChevronDown>
+              <ChevronDown className='w-[32px] h-[32px] font-bold border rounded-sm text-orange-500 bg-white bg-opacity-80'></ChevronDown>
             </DropdownMenuTrigger>
             <DropdownMenuContent className='bg-black-2 text-white font-medium'>
             <Link href={'/'}><DropdownMenuItem>الصفحة الرئيسية</DropdownMenuItem>
@@ -53,13 +53,13 @@ const Navbar = () => {
           </DropdownMenu>
           </div>
           <div className="md:flex-center md:pl-4 hidden">
-            <Link href="/about"><h1 className='font-bold px-2 hover:text-orange-500 lg:text-4xl lg:mx-4 md:text-sm'>حول الدورة</h1></Link>
-            <Link href="/contact"><h1 className='font-bold px-2 hover:text-orange-500 lg:text-4xl lg:mx-4 md:text-sm'>تواصل معي</h1></Link>
-            <Link href="/signup"><h1 className='font-bold px-2 hover:text-orange-500 lg:text-4xl lg:mx-4 md:text-sm'>فتح حساب</h1></Link>
-            <Link href="/signin"><h1 className='font-bold px-2 hover:text-orange-500 lg:text-4xl lg:mx-4 md:text-sm'>تسجيل الدخول</h1></Link>
+            <Link href="/about" className=''><h1 className='pl-8 font-bold  hover:text-orange-500 lg:text-2xl  md:text-sm '>حول الدورة</h1></Link>
+            <Link href="/contact"><h1 className='pl-8 font-bold  hover:text-orange-500 lg:text-2xl  md:text-sm'>تواصل معي</h1></Link>
+            <Link href="/signup"><h1 className='pl-8 font-bold  hover:text-orange-500 lg:text-2xl  md:text-sm'>فتح حساب</h1></Link>
+            <Link href="/signin"><h1 className='pl-8 font-bold  hover:text-orange-500 lg:text-2xl  md:text-sm'>تسجيل الدخول</h1></Link>
           </div>
           </div>
-          <div className=" md:hidden flex justify-center"><Separator/></div>
+          <div className="  hidden md:hidden lg:flex justify-center "><Separator/></div>
         </div>
           </>
   )

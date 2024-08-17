@@ -61,10 +61,10 @@ function Home() {
           </div>
           <div className="flex-center md:my-6 "><Separator/></div>
           <div className='md:flex-row md:flex-center'>
-          <Image src={HeroPic}
+          <div><Image src={HeroPic}
           alt="alaa bourega picture"
           className='my-4 md:w-[512px] lg:w-[1000px]'
-          />
+          /></div>
           <div className='md:flex-row md:justify-start md:items-start w-full md:p-6'>
           <h1 className="text-3xl lg:text-9xl lg:p-8 text-center font-bold text-orange-500">علاء بورقعة</h1>
           <p className="text-center lg:text-4xl font-medium">خريج جامعة قسنطينة 2 - عبد الحميد مهري كلية تكنولوجيات الإعلام و الإتصال مهندس برمجيات مختص في عدة انطمة تطوير بخبرة محترمة من 5 سنوات عمل حر و مستقل .
