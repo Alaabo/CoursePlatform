@@ -46,7 +46,7 @@ function Home() {
         </div>
         <div>
         <h1 className="md:pr-4 md:text-6xl 2xl:text-9xl  text-6xl font-extrabold my-4"> 
-          <TypingEffect text="إنضم إلى النخبة و إبني مستقبلا كمطور و مبرمج"/>
+          <TypingEffect text="إنضم إلى النخبة و إبني مستقبلا كمطور و مبرمج" speed={50}/>
            </h1>
         <Separator/>
         <div className="md:hidden py-4 lg:block lg:p-6 lg:text-7xl">

@@ -1,36 +1,36 @@
-// components/TypingEffect.js
+// components/TypingEffect.tsx
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-const TypingEffect = ({ text } : any) => {
+interface TypingEffectProps {
+  text: string;
+  speed?: number; // Speed of typing in milliseconds per character
+}
 
-  const letters = text.split('');
+const TypingEffect: React.FC<TypingEffectProps> = ({ text, speed = 100 }) => {
+  const [displayedText, setDisplayedText] = useState<string>('');
+  const [index, setIndex] = useState<number>(0);
 
+  useEffect(() => {
+    if (index < text.length) {
+      const timeout = setTimeout(() => {
+        setDisplayedText(prev => prev + text[index]);
+        setIndex(prev => prev + 1);
+      }, speed);
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: (i = 1) => ({
-      opacity: 1,
-      transition: { staggerChildren: 0.05, delayChildren: 0.04 * i },
-    }),
-  };
-
-  const letterVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0 },
-  };
+      return () => clearTimeout(timeout);
+    }
+  }, [index, text, speed]);
 
   return (
     <motion.div
-      className="inline-block"
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
+      
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
     >
-      {letters.map((letter, index) => (
-        <motion.span key={index} variants={letterVariants}>
-          {letter}
-        </motion.span>
-      ))}
+      {displayedText}
+      <span className="text-transparent">|</span> {/* Cursor */}
     </motion.div>
   );
 };
