@@ -56,7 +56,7 @@ function Home() {
         transition={{ duration: 1.5 }}
 
         >
-        <Link href="/bootcamp"><Button className='md:hidden lg:block text-orange-500 my-2 lg:h-full font-extrabold text-2xl lg:text-7xl bg-white'>ابدأ رحلتك الان</Button></Link>
+        <Link href="/about"><Button className='md:hidden lg:block text-orange-500 my-2 lg:h-full font-extrabold text-2xl lg:text-7xl bg-white'>ابدأ رحلتك الان</Button></Link>
         </motion.div>
         </div>
         </div>
