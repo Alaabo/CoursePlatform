@@ -7,12 +7,28 @@
   .flex-center {
     @apply flex justify-center items-center;
   };
-
+  
   .glassmorphism {
     @apply  bg-green-400 bg-clip-padding backdrop-blur-2xl bg-opacity-10 border border-gray-100 ;
   };
 
 };
+/* global.css */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
 body {
   overflow-x: hidden;
 };
