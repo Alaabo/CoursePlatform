@@ -6,6 +6,7 @@ import discord from "../../../public/discord.png"
 import network from "../../../public/network.png"
 import balance from "../../../public/balance.png"
 import support from "../../../public/support.png"
+import condition from "../../../public/condition.png"
 import goals from "../../../public/goals.png"
 import proud from "../../../public/proud.png"
 import Image from "next/image"
@@ -28,7 +29,7 @@ function About() {
         <div  className=" h-screen text-white text-2xl snap-start p-2  flex-col flex justify-between py-8">
           <div className="w-full h-2/5">
           
-          <h1 className="text-center text-4xl w-full pt-20 ">
+          <h1 className="text-center text-4xl w-full pt-10 ">
           <TypingEffect text="&quot;
             عند الإنتهاء من التدريب ستكون مستعدا لسوق العمل على الصعيد الوطني و العالمي حيث دمجنا بيداغوجيات الجامعة مع خبرتنا في السوق لننتج محتوى راقي و مفيد فعلا&quot;" speed={25}/>
           </h1>
@@ -129,25 +130,37 @@ function About() {
           </motion.div>
         </div>
 
-        <div  className=" text-white text-2xl snap-start h-screen">
+        <div  className=" text-white text-2xl snap-start h-screen flex flex-col justify-center items-center">
         <div className="w-full flex flex-center">
-          <Image src={business} alt="business man" className="w-1/2 p-2 h-auto" />
+          
+          <motion.div 
+          initial={{opacity:0 , y:20}}
+          whileInView={{opacity: 1 , y:0}}
+          transition={{duration:1 , easings:"easeInOut"}}>
+            <Image src={condition} alt="business man" className=" p-2 h-auto" />
+            </motion.div>
           </div>
-        <p className="text-center text-4xl w-3/4 p-4 ">لا يوجد شروط للانضمام الى البرنامج أنت فقط تحتاج الى الالتزام و روح المثابرة لتحقيق الهدف المرجو و الاستفادة المثلى من الفرص المتاحة</p>
+        <p className="text-center text-4xl  p-4 ">لا يوجد شروط للانضمام الى البرنامج أنت فقط تحتاج الى الالتزام و روح المثابرة لتحقيق الهدف المرجو و الاستفادة المثلى من الفرص المتاحة</p>
         </div>
         
-        <div className=" text-white text-2xl snap-start h-screen">
+        <div className=" text-white text-2xl snap-start h-screen flex flex-col justify-center items-center">
         <div className="w-full flex flex-center">
-          <Image src={business} alt="business man" className="w-1/2 p-2 h-auto" />
+          <motion.div
+          initial={{scale:0}}
+          whileInView={{scale:1}}
+          transition={{duration:.2 , ease: "easeInOut"}}
+          >
+          <Image src={discord} alt="business man" className=" p-2 h-auto" />
+          </motion.div>
           </div>
-        <p className="text-center text-4xl w-3/4 p-4 ">برنامج مؤطر لمدة 12 شهرا بمعدل حصة يوميا اونلاين على منصة ديسكورد مع إحتمالية الزيادة لمعالجة المشاكل المتعلقة بالمشاركين</p>
+          <motion.div
+          initial={{opacity:0 , y:20}}
+          whileInView={{opacity: 1 , y:0}}
+          transition={{duration:.3 , easings:"easeInOut"}}
+          >
+          <p className="text-center text-4xl  p-4 ">برنامج مؤطر لمدة 12 شهرا بمعدل حصة يوميا اونلاين على منصة ديسكورد مع إحتمالية الزيادة لمعالجة المشاكل المتعلقة بالمشاركين</p>
+          </motion.div>
         </div>
-        
-        
-       <div className="text-7xl">
-        <h1 className="font-bold">what you waiting?
-        </h1>
-       </div>
       </div>
     </>
   )
