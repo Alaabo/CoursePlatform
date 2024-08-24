@@ -26,7 +26,7 @@ const TypingEffect: React.FC<TypingEffectProps> = ({ text, speed = 100 }) => {
     <motion.div
       
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
       {displayedText}

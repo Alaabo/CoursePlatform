@@ -31,6 +31,9 @@
 
 body {
   overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  font-family: 'Fustat', sans-serif;
 };
 @font-face {
   font-family: 'Fustat';
@@ -81,9 +84,6 @@ body {
   font-style: normal;
 }
 
-body {
-  font-family: 'Fustat', sans-serif;
-}
 
 
 

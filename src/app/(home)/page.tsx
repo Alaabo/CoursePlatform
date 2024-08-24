@@ -18,14 +18,10 @@ import "../globals.css";
 import { motion } from 'framer-motion'
 import TypingEffect from '@/components/Mine/TypingEffect'
 import ScrollAnimation from '@/components/Mine/ScrollAnimation'
-import { useInView } from 'react-intersection-observer'
 import StaggeredScrollAnimation from '@/components/Mine/PoppingAnimation'
 
 function Home() {
-  const { ref, inView } = useInView({
-    triggerOnce: false,
-    threshold: 0.2, 
-  });
+
   
   return(
     <>

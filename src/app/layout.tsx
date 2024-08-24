@@ -11,9 +11,9 @@ export default function RootLayout({
     <>
     <html lang="ar" >
       <title>CODDZ</title>
-      <body className="bg-black-1 max-w-full text-white">
+      <body className="bg-black-1 max-w-full h-full text-white">
         <Navbar/>
-        <div className="w-full">{children}</div>
+        <div className="w-full h-full">{children}</div>
        
         </body>
 
